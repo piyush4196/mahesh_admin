@@ -1,0 +1,301 @@
+@font-face {
+    font-family: 'ibm-flex-bold';
+	src: url('../fonts/IBMPlexSans-Bold.ttf');
+}
+@font-face {
+    font-family: 'NotoSans-Regular';
+	src: url('../fonts/NotoSans-Regular.ttf');
+}
+a { color: #0e73e4 }
+* {font-family: 'NotoSans-Regular';}
+html, body {background-color: #f5f5f5;}
+h1, .h1 {font-size: 3rem;}
+h1,.h1,h2,.h2 {font-family: 'ibm-flex-bold';}
+.text-blue {
+    color: #0e73e4;
+}
+.w-100 {width: 100%;}
+.f-700 {font-weight: 700;}
+.f-800 {font-weight: 800;}
+.bg-gradient-blue {
+    background: linear-gradient( 90deg, #03228f 10%, #0e73e4 100%);
+}
+.border-bottom-1 {
+    border-bottom: 1px solid #ddd;
+}
+.border-top-1 {
+    border-top: 1px solid #ddd;
+}
+.site-btn {
+    color: #fff!important; 
+    border: none; 
+    padding: .5rem 2rem;
+    background-color: #0e73e4;
+}
+
+
+.main-container {
+    border-left: 1px solid #f5f5f5;
+    border-right: 1px solid #f5f5f5;
+    padding: 0;
+	background-color: #fff;
+	min-height: 100vh;
+}
+.content-section {min-height: 100vh;padding:0 1.5rem;}
+
+.border-bottom-1 { border-bottom: 1px solid #eee;}
+
+
+
+
+.login-with-social {
+    padding: 0.5rem 1.5rem;
+    background-color: #171515;
+    border-radius: 0.25rem;
+    font-size: .85rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .6s ease;
+}
+.login-with-social:hover {
+    color: #fff;
+    text-decoration: none;
+    box-shadow: inset 1px 1px 10px 1px rgba(0,0,0,.5);
+}
+.login-with-social > svg{
+    font-size: 1.25rem;
+    margin-right: .5rem;
+}
+.login-with-gmail {
+    background-color: #db4a39;
+}
+
+.formHeader {
+    padding: 0.375rem 0.75rem;
+}
+.logo {
+    display: block;
+    width: 160px;
+    height: auto;
+}
+.navbar {padding: 1.5rem 1rem; background-color: #fff;}
+.navbar .navbar-nav > .nav-item {margin: 0 0 0 1.5rem;} 
+.navbar .navbar-nav .nav-link {
+    font-size: 0.85rem;
+    padding: 0.375rem 2rem;
+}
+.navbar .logo {max-width: 110px; width: 100%;}
+.form-wrapper {
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin: auto;
+}
+.login-wrapper.shown, .register-wrapper.shown {
+    display: flex;
+}
+.form-group { position: relative; margin-bottom: 1.5rem;}
+.form-group * {font-size: .85rem;}
+.form-group > small {font-size: .75rem;}
+.form-check-label, .form-link {
+    font-size: .75rem;
+}
+.form-group > label { 
+    color: #0e73e4;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(2.5rem + 2px);
+    padding: 0.375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+.form-control.error {
+    border: 1px solid #f00;
+}
+.form-control:focus, .form-group.focused > .form-control {
+    color: #495057;
+    background-color: #fff;
+    border-color: #0e73e4;
+    outline: 0;
+    box-shadow: none;
+}
+
+@media (max-width: 767px){
+    .navbar {
+        justify-content: center;
+        align-items: center;
+        padding: .5rem 1rem;
+    }
+    .navbar .logo {
+        max-width: 130px;
+    }
+    .navbar .navbar-nav {margin: 1rem 0 .5rem; display: flex; justify-content: center; width: 100%;}
+    .navbar .navbar-nav > .nav-item {margin: 0 1rem 0 1rem;} 
+    .formHeader *{
+        transform: translateY(-400px);
+    }
+    .formHeader > small{
+        transform: translateY(0);
+    }
+}
+
+
+.h-200 {height: 200px;}
+.w-200 {width: 200px;}
+.h-300 {height: 300px;}
+.w-300 {width: 300px;}
+
+
+
+
+
+
+
+/**=
+card css
+==***/
+.cards-group > .card {background-color: deepskyblue; color: #fff; text-transform: uppercase; height: 200px; width: 200px; padding: .5rem; text-align: center;}
+.circle-card {
+	border-radius: 50%;
+	border: 1px solid #eee;
+}
+.cards-group > .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+/****===
+section css starts
+===***/
+section {
+	margin: 1.5rem 0;
+}
+.description {
+	padding: 1.5rem 3rem;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	border: 1px solid #ddd;
+}
+
+.userImage {
+    width: 70px;
+    height: 70px;
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+
+.table.no-bordered td, .table.no-bordered th {
+	padding: 0.75rem 1.5rem .75rem 0;
+    border-top: 1px solid transparent!important;
+}
+
+
+
+
+
+
+
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.drop {
+  width: 96%;
+  height: 96%;
+  border: 3px dashed #DADFE3;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  background: white;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /*&:hover
+  * cursor: pointer
+  * background: #f5f5f5*/
+}
+.drop .cont {
+  width: 500px;
+  height: 170px;
+  color: #8E99A5;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.drop .cont svg {
+  font-size: 350%;
+  color: #8E99A5;
+  position: relative;
+}
+.drop .cont .desc {
+  color: #A4AEBB;
+}
+.drop .cont .browse {
+  margin: 10px 25%;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  background: #09f;
+}
+.drop input {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background: red;
+  opacity: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#list {
+  width: 100%;
+  text-align: left;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#list .thumb {
+  height: 75px;
+  border: 1px solid #323a44;
+  margin: 10px 5px 0 0;
+}
